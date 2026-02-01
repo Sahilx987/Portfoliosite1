@@ -100,18 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ================================================
-    // Download Resume Button (Placeholder Alert)
-    // ================================================
-    const downloadButtons = document.querySelectorAll('a[href="#resume"], a[download]');
-    downloadButtons.forEach(button => {
-        if (button.getAttribute('href') === '#' || button.hasAttribute('download')) {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert('Resume download functionality:\n\nTo enable this, replace the href="#" with a link to your actual resume PDF file.\n\nExample: href="./assets/Sahil_Kumar_Resume.pdf"');
-            });
-        }
-    });
     
     // ================================================
     // Scroll Reveal Animation (Optional Enhancement)
